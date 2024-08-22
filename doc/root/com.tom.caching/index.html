@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
+    <title>com.tom.caching</title>
+    <link href="../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+    <script async="async" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
+            type="text/javascript"></script>
+    <script async="async" src="../../scripts/sourceset_dependencies.js" type="text/javascript"></script>
+    <link href="../../styles/style.css" rel="Stylesheet">
+    <link href="../../styles/main.css" rel="Stylesheet">
+    <link href="../../styles/prism.css" rel="Stylesheet">
+    <link href="../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+    <script async="async" src="../../scripts/clipboard.js" type="text/javascript"></script>
+    <script async="async" src="../../scripts/navigation-loader.js" type="text/javascript"></script>
+    <script async="async" src="../../scripts/platform-content-handler.js" type="text/javascript"></script>
+    <script defer="defer" src="../../scripts/main.js" type="text/javascript"></script>
+    <script async="async" src="../../scripts/prism.js" type="text/javascript"></script>
+    <script defer="defer" src="../../scripts/symbol-parameters-wrapper_deferred.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="root">
+    <nav class="navigation" id="navigation-wrapper">
+        <div class="navigation--inner">
+            <div class="navigation-title">
+                <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+                <div class="library-name">
+                    <a class="library-name--link" href="../../index.html">
+                        root
+                    </a>
+                </div>
+                <div class="library-version">
+                </div>
+            </div>
+            <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="root/main">JVM
+                </button>
+            </div>
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">
+                switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in
+                API
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="sidebar" id="leftColumn">
+            <div class="sidebar--inner" id="sideMenu"></div>
+        </div>
+        <div id="main">
+            <div class="main-content" data-page-type="package" id="content"
+                 pageIds="root::com.tom.caching////PointingToDeclaration//-1617659094">
+                <div class="breadcrumbs"><a href="../../index.html">root</a><span class="delimiter">/</span><span
+                        class="current">com.tom.caching</span></div>
+                <div class="cover ">
+                    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span>
+                    </h1>
+                </div>
+                <div class="tabbedcontent">
+                    <div class="tabs-section" tabs-section="tabs-section">
+                        <button class="section-tab" data-active="" data-togglable="TYPE">Types</button>
+                    </div>
+                    <div class="tabs-section-body">
+                        <div data-togglable="TYPE">
+                            <h2 class="">Types</h2>
+                            <div class="table"><a anchor-label="Cache" data-filterable-set="root/main"
+                                                  data-name="1113846792%2FClasslikes%2F-1617659094"
+                                                  id="1113846792%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-cache/index.html"><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1113846792%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">interface </span><a
+                                                                href="-cache/index.html">Cache</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-cache/index.html">ID</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="-cache/index.html">T</a><span
+                                                                class="token operator">&gt;</span></div>
+                                                        <div class="brief "><p class="paragraph">Extremely general
+                                                            interface for implementing Caching of objects of type <a
+                                                                    href="-cache/index.html">T</a>. A <a
+                                                                    href="-cache/index.html">Cache</a> type can accept
+                                                            and identifier and content and perform some sort of caching
+                                                            (in memory, on disk, etc.) using <a
+                                                                    href="-cache/cache-item.html">cacheItem</a> and then
+                                                            retrieve that data later when calling <a
+                                                                    href="-cache/get-item.html">getItem</a>.</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="CacheConfiguration" data-filterable-set="root/main"
+                                   data-name="-1235909212%2FClasslikes%2F-1617659094" id="-1235909212%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-cache-configuration/index.html"><span>Cache</span><wbr></wbr><span><span>Configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1235909212%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">data </span><span
+                                                                class="token keyword">class </span><a
+                                                                href="-cache-configuration/index.html">CacheConfiguration</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-cache-configuration/index.html">ID</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="-cache-configuration/index.html">T</a><span
+                                                                class="token operator">&gt;</span><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span class="parameter "><span
+                                                                class="token keyword">val </span>maxAge<span
+                                                                class="token operator">: </span><span
+                                                                data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span><span
+                                                                class="token operator"> = </span>1.days</span></span><span
+                                                                class="token punctuation">)</span></div>
+                                                        <div class="brief "><p class="paragraph">Represents the
+                                                            configuration parameters of a <a href="-cache/index.html">Cache</a>
+                                                            object.</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="CachedDataSource" data-filterable-set="root/main"
+                                   data-name="1305311281%2FClasslikes%2F-1617659094" id="1305311281%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-cached-data-source/index.html"><span>Cached</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1305311281%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">interface </span><a
+                                                                href="-cached-data-source/index.html">CachedDataSource</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-cached-data-source/index.html">S</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="-cached-data-source/index.html">T</a><span
+                                                                class="token operator">&gt;</span> : <a
+                                                                href="-data-source/index.html">DataSource</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-cached-data-source/index.html">S</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="-cached-data-source/index.html">T</a><span
+                                                                class="token operator">&gt; </span></div>
+                                                        <div class="brief "><p class="paragraph">Represents a source of
+                                                            data with caching support</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="CacheError" data-filterable-set="root/main"
+                                   data-name="1525504466%2FClasslikes%2F-1617659094" id="1525504466%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-cache-error/index.html"><span>Cache</span><wbr></wbr><span><span>Error</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1525504466%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">class </span><a
+                                                                href="-cache-error/index.html">CacheError</a><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span class="parameter ">cause<span
+                                                                class="token operator">: </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span
+                                                                class="token punctuation">)</span> : <a
+                                                                href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html">Exception</a>
+                                                        </div>
+                                                        <div class="brief "><p class="paragraph">Represents an
+                                                            unrecoverable Cache problem that means the <a
+                                                                    href="-cache/index.html">Cache</a> instance is
+                                                            useless</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="CacheException" data-filterable-set="root/main"
+                                   data-name="-1647203093%2FClasslikes%2F-1617659094" id="-1647203093%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-cache-exception/index.html"><span>Cache</span><wbr></wbr><span><span>Exception</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1647203093%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">class </span><a
+                                                                href="-cache-exception/index.html">CacheException</a><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span class="parameter ">cause<span
+                                                                class="token operator">: </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span
+                                                                class="token punctuation">)</span> : <a
+                                                                href="https://docs.oracle.com/javase/8/docs/api/java/lang/Exception.html">Exception</a>
+                                                        </div>
+                                                        <div class="brief "><p class="paragraph">Represents an
+                                                            exceptional Cache problem</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="CacheResult" data-filterable-set="root/main"
+                                   data-name="2099155243%2FClasslikes%2F-1617659094" id="2099155243%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-cache-result/index.html"><span>Cache</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2099155243%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">data </span><span
+                                                                class="token keyword">class </span><a
+                                                                href="-cache-result/index.html">CacheResult</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-cache-result/index.html">ID</a><span
+                                                                class="token operator">&gt;</span><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span class="parameter "><span
+                                                                class="token keyword">val </span>identifier<span
+                                                                class="token operator">: </span><a
+                                                                href="-cache-result/index.html">ID</a><span
+                                                                class="token punctuation">, </span></span><span
+                                                                class="parameter "><span
+                                                                class="token keyword">val </span>overwrote<span
+                                                                class="token operator">: </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
+                                                                class="token punctuation">)</span></div>
+                                                        <div class="brief "><p class="paragraph">Represents the result
+                                                            of caching an item using <a href="-cache-result/index.html">Cache</a>
+                                                            should be the type that the <a href="-cache/index.html">Cache</a>
+                                                            can use to identify items so that the cache encounters equal
+                                                            objects of type <a href="-cache-result/index.html">ID</a>,
+                                                            it returns the cached data T is the type of the data being
+                                                            cached. This is frequently Strings being cached using the
+                                                            FileSystem and a <a href="-file-system-cache/index.html">FileSystemCache</a>
+                                                            class exists for convenience</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="DataSource" data-filterable-set="root/main"
+                                   data-name="-1143499277%2FClasslikes%2F-1617659094" id="-1143499277%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-data-source/index.html"><span>Data</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1143499277%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">interface </span><a
+                                                                href="-data-source/index.html">DataSource</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-data-source/index.html">S</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="-data-source/index.html">T</a><span
+                                                                class="token operator">&gt;</span></div>
+                                                        <div class="brief "><p class="paragraph">Represents a source of
+                                                            data</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="FileCachedDataSource"
+                                   data-filterable-set="root/main" data-name="-1143045483%2FClasslikes%2F-1617659094"
+                                   id="-1143045483%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-file-cached-data-source/index.html"><span>File</span><wbr></wbr><span>Cached</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1143045483%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">open </span><span
+                                                                class="token keyword">class </span><a
+                                                                href="-file-cached-data-source/index.html">FileCachedDataSource</a><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span class="parameter ">cache<span
+                                                                class="token operator">: </span><a
+                                                                href="-cache/index.html">Cache</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-file-identifier/index.html">FileIdentifier</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                                class="token operator">&gt;</span></span></span><span
+                                                                class="token punctuation">)</span> : <a
+                                                                href="-string-cached-data-source/index.html">StringCachedDataSource</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-file-identifier/index.html">FileIdentifier</a><span
+                                                                class="token operator">&gt; </span></div>
+                                                        <div class="brief "><p class="paragraph">Implementation of <a
+                                                                href="-string-cached-data-source/index.html">StringCachedDataSource</a>
+                                                            that retrieves data from files on the System and identifies
+                                                            them using <a href="-file-identifier/index.html">FileIdentifier</a>
+                                                        </p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="FileIdentifier" data-filterable-set="root/main"
+                                   data-name="-1098055789%2FClasslikes%2F-1617659094" id="-1098055789%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-file-identifier/index.html"><span>File</span><wbr></wbr><span><span>Identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1098055789%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">interface </span><a
+                                                                href="-file-identifier/index.html">FileIdentifier</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="FileSystemCache" data-filterable-set="root/main"
+                                   data-name="290309747%2FClasslikes%2F-1617659094" id="290309747%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-file-system-cache/index.html"><span>File</span><wbr></wbr><span>System</span><wbr></wbr><span><span>Cache</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="290309747%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">open </span><span
+                                                                class="token keyword">class </span><a
+                                                                href="-file-system-cache/index.html">FileSystemCache</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-file-system-cache/index.html">ID</a><span
+                                                                class="token operator"> : </span><a
+                                                                href="-file-identifier/index.html">FileIdentifier</a><span
+                                                                class="token operator">&gt;</span><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span class="parameter "><span
+                                                                class="token keyword">val </span>configuration<span
+                                                                class="token operator">: </span><a
+                                                                href="-cache-configuration/index.html">CacheConfiguration</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-file-system-cache/index.html">ID</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                                class="token operator">&gt;</span><span
+                                                                class="token operator"> = </span>CacheConfiguration()<span
+                                                                class="token punctuation">, </span></span><span
+                                                                class="parameter ">cacheRoot<span
+                                                                class="token operator">: </span><a
+                                                                href="https://docs.oracle.com/javase/8/docs/api/java/io/File.html">File</a><span
+                                                                class="token operator"> = </span>Paths.get(&quot;.cache&quot;).toFile()</span></span><span
+                                                                class="token punctuation">)</span> : <a
+                                                                href="-cache/index.html">Cache</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-file-system-cache/index.html">ID</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                                class="token operator">&gt; </span></div>
+                                                        <div class="brief "><p class="paragraph">Partial implementation
+                                                            of <a href="-cache/index.html">Cache</a> for use with the
+                                                            filesystem. Use of this abstract class involves a few things
+                                                        </p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="LoadSource" data-filterable-set="root/main"
+                                   data-name="-1947723465%2FClasslikes%2F-1617659094" id="-1947723465%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-load-source/index.html"><span>Load</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1947723465%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">enum </span><a
+                                                                href="-load-source/index.html">LoadSource</a> : <a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-load-source/index.html">LoadSource</a><span
+                                                                class="token operator">&gt; </span></div>
+                                                        <div class="brief "><p class="paragraph">Used to differential
+                                                            the source of data. Either retrieved from a <a
+                                                                    href="-cache/index.html">Cache</a> or loaded
+                                                            directly (<a
+                                                                    href="-load-source/-f-r-e-s-h/index.html">FRESH</a>)
+                                                        </p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="StringCachedDataSource"
+                                   data-filterable-set="root/main" data-name="-144020000%2FClasslikes%2F-1617659094"
+                                   id="-144020000%2FClasslikes%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-string-cached-data-source/index.html"><span>String</span><wbr></wbr><span>Cached</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Source</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-144020000%2FClasslikes%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">abstract </span><span
+                                                                class="token keyword">class </span><a
+                                                                href="-string-cached-data-source/index.html">StringCachedDataSource</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-string-cached-data-source/index.html">ID</a><span
+                                                                class="token operator">&gt;</span><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span class="parameter "><span
+                                                                class="token keyword">val </span>cache<span
+                                                                class="token operator">: </span><a
+                                                                href="-cache/index.html">Cache</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-string-cached-data-source/index.html">ID</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                                class="token operator">&gt;</span></span></span><span
+                                                                class="token punctuation">)</span> : <a
+                                                                href="-cached-data-source/index.html">CachedDataSource</a><span
+                                                                class="token operator">&lt;</span><a
+                                                                href="-string-cached-data-source/index.html">ID</a><span
+                                                                class="token punctuation">, </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                                                class="token operator">&gt; </span></div>
+                                                        <div class="brief "><p class="paragraph">Simple implementation
+                                                            of
+                                                            <a href="-cached-data-source/index.html">CachedDataSource</a>
+                                                            that handles general caching String data using a generic
+                                                            Identifier of type <a
+                                                                    href="-string-cached-data-source/index.html">ID</a>
+                                                        </p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="go-to-top-icon"><a href="#content"
+                                                id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                    class="pull-right"><span>Generated by </span><a
+                    href="https://github.com/Kotlin/dokka"><span>dokka</span><span
+                    class="padded-icon"></span></a></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

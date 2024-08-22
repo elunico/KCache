@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
+    <title>CacheResult</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+    <script async="async" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
+            type="text/javascript"></script>
+    <script async="async" src="../../../scripts/sourceset_dependencies.js" type="text/javascript"></script>
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <link href="../../../styles/main.css" rel="Stylesheet">
+    <link href="../../../styles/prism.css" rel="Stylesheet">
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+    <script async="async" src="../../../scripts/clipboard.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/navigation-loader.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/platform-content-handler.js" type="text/javascript"></script>
+    <script defer="defer" src="../../../scripts/main.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/prism.js" type="text/javascript"></script>
+    <script defer="defer" src="../../../scripts/symbol-parameters-wrapper_deferred.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="root">
+    <nav class="navigation" id="navigation-wrapper">
+        <div class="navigation--inner">
+            <div class="navigation-title">
+                <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+                <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                        root
+                    </a>
+                </div>
+                <div class="library-version">
+                </div>
+            </div>
+            <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="root/main">JVM
+                </button>
+            </div>
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">
+                switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in
+                API
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="sidebar" id="leftColumn">
+            <div class="sidebar--inner" id="sideMenu"></div>
+        </div>
+        <div id="main">
+            <div class="main-content" data-page-type="classlike" id="content"
+                 pageIds="root::com.tom.caching/CacheResult///PointingToDeclaration//-1617659094">
+                <div class="breadcrumbs"><a href="../../../index.html">root</a><span class="delimiter">/</span><a
+                        href="../index.html">com.tom.caching</a><span class="delimiter">/</span><span class="current">CacheResult</span>
+                </div>
+                <div class="cover ">
+                    <h1 class="cover"><span>Cache</span>
+                        <wbr></wbr>
+                        <span><span>Result</span></span></h1>
+                    <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                        <div class="content sourceset-dependent-content" data-active="" data-togglable="root/main">
+                            <div class="symbol monospace"><span class="token keyword">data </span><span
+                                    class="token keyword">class </span><a href="index.html">CacheResult</a><span
+                                    class="token operator">&lt;</span><a href="index.html">ID</a><span
+                                    class="token operator">&gt;</span><span class="token punctuation">(</span><span
+                                    class="parameters "><span class="parameter "><span class="token keyword">val </span>identifier<span
+                                    class="token operator">: </span><a href="index.html">ID</a><span
+                                    class="token punctuation">, </span></span><span class="parameter "><span
+                                    class="token keyword">val </span>overwrote<span class="token operator">: </span><a
+                                    href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
+                                    class="token punctuation">)</span></div>
+                            <p class="paragraph">Represents the result of caching an item using <a href="index.html">Cache</a>
+                                should be the type that the <a href="../-cache/index.html">Cache</a> can use to identify
+                                items so that the cache encounters equal objects of type <a href="index.html">ID</a>, it
+                                returns the cached data T is the type of the data being cached. This is frequently
+                                Strings being cached using the FileSystem and a <a
+                                        href="../-file-system-cache/index.html">FileSystemCache</a> class exists for
+                                convenience</p></div>
+                    </div>
+                </div>
+                <div class="tabbedcontent">
+                    <div class="tabs-section" tabs-section="tabs-section">
+                        <button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">
+                            Members
+                        </button>
+                    </div>
+                    <div class="tabs-section-body">
+                        <div data-togglable="CONSTRUCTOR">
+                            <h2 class="">Constructors</h2>
+                            <div class="table"><a anchor-label="CacheResult"
+                                                  data-filterable-set="root/main" data-name="674826413%2FConstructors%2F-1617659094"
+                                                  id="674826413%2FConstructors%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main" data-filterable-set="root/main"
+                                     data-togglable="CONSTRUCTOR">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="-cache-result.html"><span>Cache</span><wbr></wbr><span><span>Result</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="674826413%2FConstructors%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">constructor</span><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span
+                                                                class="parameter ">identifier<span
+                                                                class="token operator">: </span><a
+                                                                href="index.html">ID</a><span class="token punctuation">, </span></span><span
+                                                                class="parameter ">overwrote<span
+                                                                class="token operator">: </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span
+                                                                class="token punctuation">)</span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-togglable="PROPERTY">
+                            <h2 class="">Properties</h2>
+                            <div class="table"><a anchor-label="identifier"
+                                                  data-filterable-set="root/main" data-name="-1904560789%2FProperties%2F-1617659094"
+                                                  id="-1904560789%2FProperties%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="identifier.html"><span><span>identifier</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1904560789%2FProperties%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">val </span><a
+                                                                href="identifier.html">identifier</a><span
+                                                                class="token operator">: </span><a
+                                                                href="index.html">ID</a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="overwrote" data-filterable-set="root/main"
+                                   data-name="-1232514635%2FProperties%2F-1617659094" id="-1232514635%2FProperties%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="overwrote.html"><span><span>overwrote</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1232514635%2FProperties%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span
+                                                                class="token keyword">val </span><a
+                                                                href="overwrote.html">overwrote</a><span
+                                                                class="token operator">: </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="go-to-top-icon"><a href="#content"
+                                                id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                    class="pull-right"><span>Generated by </span><a
+                    href="https://github.com/Kotlin/dokka"><span>dokka</span><span
+                    class="padded-icon"></span></a></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

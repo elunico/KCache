@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
+    <title>Cache</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+    <script async="async" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
+            type="text/javascript"></script>
+    <script async="async" src="../../../scripts/sourceset_dependencies.js" type="text/javascript"></script>
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <link href="../../../styles/main.css" rel="Stylesheet">
+    <link href="../../../styles/prism.css" rel="Stylesheet">
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+    <script async="async" src="../../../scripts/clipboard.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/navigation-loader.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/platform-content-handler.js" type="text/javascript"></script>
+    <script defer="defer" src="../../../scripts/main.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/prism.js" type="text/javascript"></script>
+    <script defer="defer" src="../../../scripts/symbol-parameters-wrapper_deferred.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="root">
+    <nav class="navigation" id="navigation-wrapper">
+        <div class="navigation--inner">
+            <div class="navigation-title">
+                <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+                <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                        root
+                    </a>
+                </div>
+                <div class="library-version">
+                </div>
+            </div>
+            <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="root/main">JVM
+                </button>
+            </div>
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">
+                switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in
+                API
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="sidebar" id="leftColumn">
+            <div class="sidebar--inner" id="sideMenu"></div>
+        </div>
+        <div id="main">
+            <div class="main-content" data-page-type="classlike" id="content"
+                 pageIds="root::com.tom.caching/Cache///PointingToDeclaration//-1617659094">
+                <div class="breadcrumbs"><a href="../../../index.html">root</a><span class="delimiter">/</span><a
+                        href="../index.html">com.tom.caching</a><span class="delimiter">/</span><span class="current">Cache</span>
+                </div>
+                <div class="cover ">
+                    <h1 class="cover"><span><span>Cache</span></span></h1>
+                    <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                        <div class="content sourceset-dependent-content" data-active="" data-togglable="root/main">
+                            <div class="symbol monospace"><span class="token keyword">interface </span><a
+                                    href="index.html">Cache</a><span class="token operator">&lt;</span><a
+                                    href="index.html">ID</a><span class="token punctuation">, </span><a
+                                    href="index.html">T</a><span class="token operator">&gt;</span></div>
+                            <p class="paragraph">Extremely general interface for implementing Caching of objects of type
+                                <a href="index.html">T</a>. A <a href="index.html">Cache</a> type can accept and
+                                identifier and content and perform some sort of caching (in memory, on disk, etc.) using
+                                <a href="cache-item.html">cacheItem</a> and then retrieve that data later when calling
+                                <a href="get-item.html">getItem</a>.</p>
+                            <p class="paragraph"><a href="index.html">ID</a> should be the type that the <a
+                                    href="index.html">Cache</a> can use to identify items so that the cache encounters
+                                equal objects of type <a href="index.html">ID</a>, it returns the cached data <a
+                                        href="index.html">T</a> is the type of the data being cached. This is frequently
+                                Strings being cached using the FileSystem and a <a
+                                        href="../-file-system-cache/index.html">FileSystemCache</a> class exists for
+                                convenience</p>
+                            <p class="paragraph">The cache functions of the <a href="index.html">ID</a> type and values
+                                therein so conflicting objects of this type for different content will cause
+                                inconsistencies in the cache. Ensure that there are sufficiently many values for the
+                                type used as <a href="index.html">ID</a></p>
+                            <p class="paragraph">Both <a href="index.html">ID</a> and <a href="index.html">T</a> must be
+                                compatible with the method of caching. Since the interface is so general, the type bound
+                                of Serializable is not imposed on the types, since implementation may not require it,
+                                however, in general the types must be compatible with whatever method of caching they
+                                use.</p><h4 class="">Inheritors</h4>
+                            <div class="table">
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex"><div><a
+                                                href="../-file-system-cache/index.html">FileSystemCache</a></div></span>
+                                        </div>
+                                        <div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tabbedcontent">
+                    <div class="tabs-section" tabs-section="tabs-section">
+                        <button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">
+                            Members
+                        </button>
+                    </div>
+                    <div class="tabs-section-body">
+                        <div data-togglable="PROPERTY">
+                            <h2 class="">Properties</h2>
+                            <div class="table"><a anchor-label="configuration"
+                                                  data-filterable-set="root/main"
+                                                  data-name="1440419341%2FProperties%2F-1617659094"
+                                                  id="1440419341%2FProperties%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="configuration.html"><span><span>configuration</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1440419341%2FProperties%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">abstract </span><span
+                                                                class="token keyword">val </span><a
+                                                                href="configuration.html">configuration</a><span
+                                                                class="token operator">: </span><a
+                                                                href="../-cache-configuration/index.html">CacheConfiguration</a><span
+                                                                class="token operator">&lt;</span><a href="index.html">ID</a><span
+                                                                class="token punctuation">, </span><a href="index.html">T</a><span
+                                                                class="token operator">&gt;</span></div>
+                                                        <div class="brief "><p class="paragraph">Return this Cache's
+                                                            configuration settings</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="size" data-filterable-set="root/main"
+                                   data-name="-1939011178%2FProperties%2F-1617659094" id="-1939011178%2FProperties%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="size.html"><span><span>size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1939011178%2FProperties%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">abstract </span><span
+                                                                class="token keyword">val </span><a href="size.html">size</a><span
+                                                                class="token operator">: </span><a
+                                                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span
+                                                                class="token operator">?</span></div>
+                                                        <div class="brief "><p class="paragraph">Return the current size
+                                                            of the cache or null if the given implementation does not
+                                                            support size querying</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-togglable="FUNCTION">
+                            <h2 class="">Functions</h2>
+                            <div class="table"><a anchor-label="cacheItem"
+                                                  data-filterable-set="root/main" data-name="263758511%2FFunctions%2F-1617659094"
+                                                  id="263758511%2FFunctions%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="cache-item.html"><span>cache</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="263758511%2FFunctions%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">abstract </span><span
+                                                                class="token keyword">fun </span><a
+                                                                href="cache-item.html"><span class="token function">cacheItem</span></a><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span
+                                                                class="parameter ">identifier<span
+                                                                class="token operator">: </span><a
+                                                                href="index.html">ID</a><span class="token punctuation">, </span></span><span
+                                                                class="parameter ">content<span
+                                                                class="token operator">: </span><a
+                                                                href="index.html">T</a></span></span><span
+                                                                class="token punctuation">)</span><span
+                                                                class="token operator">: </span><a
+                                                                href="../-cache-result/index.html">CacheResult</a><span
+                                                                class="token operator">&lt;</span><a href="index.html">ID</a><span
+                                                                class="token operator">&gt;</span></div>
+                                                        <div class="brief "><p class="paragraph">Cache the <a
+                                                                href="cache-item.html">content</a> using the <a
+                                                                href="cache-item.html">identifier</a> provided Can throw
+                                                            <a href="../-cache-exception/index.html">CacheException</a>
+                                                            if caching fails or <a href="../-cache-error/index.html">CacheError</a>
+                                                            if caching is impossible or the class is unusable
+                                                            Implementers do not need to throw either exception type</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="clear" data-filterable-set="root/main"
+                                   data-name="661721750%2FFunctions%2F-1617659094" id="661721750%2FFunctions%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="clear.html"><span><span>clear</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="661721750%2FFunctions%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">abstract </span><span
+                                                                class="token keyword">fun </span><a
+                                                                href="clear.html"><span
+                                                                class="token function">clear</span></a><span
+                                                                class="token punctuation">(</span><span
+                                                                class="token punctuation">)</span></div>
+                                                        <div class="brief "><p class="paragraph">Clear the cache. Can
+                                                            throw <a href="../-cache-exception/index.html">CacheException</a>
+                                                            if clearing fails</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a anchor-label="getItem" data-filterable-set="root/main"
+                                   data-name="-823280796%2FFunctions%2F-1617659094" id="-823280796%2FFunctions%2F-1617659094"></a>
+                                <div class="table-row" data-filterable-current="root/main"
+                                     data-filterable-set="root/main">
+                                    <div class="main-subrow keyValue ">
+                                        <div class=""><span class="inline-flex">
+                  <div><a href="get-item.html"><span>get</span><wbr></wbr><span><span>Item</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-823280796%2FFunctions%2F-1617659094"></span>
+                    <div class="copy-popup-wrapper "><span
+                            class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+                                        <div>
+                                            <div class="title">
+                                                <div class="platform-hinted "
+                                                     data-platform-hinted="data-platform-hinted">
+                                                    <div class="content sourceset-dependent-content" data-active=""
+                                                         data-togglable="root/main">
+                                                        <div class="symbol monospace"><span class="token keyword">abstract </span><span
+                                                                class="token keyword">fun </span><a
+                                                                href="get-item.html"><span class="token function">getItem</span></a><span
+                                                                class="token punctuation">(</span><span
+                                                                class="parameters "><span
+                                                                class="parameter ">identifier<span
+                                                                class="token operator">: </span><a
+                                                                href="index.html">ID</a></span></span><span
+                                                                class="token punctuation">)</span><span
+                                                                class="token operator">: </span><a
+                                                                href="index.html">T</a><span
+                                                                class="token operator">?</span></div>
+                                                        <div class="brief "><p class="paragraph">Retrieve the content
+                                                            associated with the given <a
+                                                                    href="get-item.html">identifier</a> or null if no
+                                                            such identifier was cached If retrieval fails <a
+                                                                    href="../-cache-exception/index.html">CacheException</a>
+                                                            can be thrown but SHOULD NOT BE thrown for successful
+                                                            attempts at retreival that do not yield extant cache values
+                                                        </p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="go-to-top-icon"><a href="#content"
+                                                id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                    class="pull-right"><span>Generated by </span><a
+                    href="https://github.com/Kotlin/dokka"><span>dokka</span><span
+                    class="padded-icon"></span></a></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

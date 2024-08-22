@@ -1,0 +1,59 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:com.tom.caching////PointingToDeclaration/root/com.tom.caching/index.html
+$dokka.location:com.tom.caching/Cache///PointingToDeclaration/root/com.tom.caching/-cache/index.html
+$dokka.location:com.tom.caching/Cache/cacheItem/#TypeParam(bounds=[kotlin.Any?])#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-cache/cache-item.html
+$dokka.location:com.tom.caching/Cache/clear/#/PointingToDeclaration/root/com.tom.caching/-cache/clear.html
+$dokka.location:com.tom.caching/Cache/configuration/#/PointingToDeclaration/root/com.tom.caching/-cache/configuration.html
+$dokka.location:com.tom.caching/Cache/getItem/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-cache/get-item.html
+$dokka.location:com.tom.caching/Cache/size/#/PointingToDeclaration/root/com.tom.caching/-cache/size.html
+$dokka.location:com.tom.caching/CacheConfiguration///PointingToDeclaration/root/com.tom.caching/-cache-configuration/index.html
+$dokka.location:com.tom.caching/CacheConfiguration/CacheConfiguration/#[Error type: Unresolved type for Duration]/PointingToDeclaration/root/com.tom.caching/-cache-configuration/-cache-configuration.html
+$dokka.location:com.tom.caching/CacheConfiguration/maxAge/#/PointingToDeclaration/root/com.tom.caching/-cache-configuration/max-age.html
+$dokka.location:com.tom.caching/CacheError///PointingToDeclaration/root/com.tom.caching/-cache-error/index.html
+$dokka.location:com.tom.caching/CacheError/CacheError/#kotlin.String/PointingToDeclaration/root/com.tom.caching/-cache-error/-cache-error.html
+$dokka.location:com.tom.caching/CacheException///PointingToDeclaration/root/com.tom.caching/-cache-exception/index.html
+$dokka.location:com.tom.caching/CacheException/CacheException/#kotlin.String/PointingToDeclaration/root/com.tom.caching/-cache-exception/-cache-exception.html
+$dokka.location:com.tom.caching/CacheResult///PointingToDeclaration/root/com.tom.caching/-cache-result/index.html
+$dokka.location:com.tom.caching/CacheResult/CacheResult/#TypeParam(bounds=[kotlin.Any?])#kotlin.Boolean/PointingToDeclaration/root/com.tom.caching/-cache-result/-cache-result.html
+$dokka.location:com.tom.caching/CacheResult/identifier/#/PointingToDeclaration/root/com.tom.caching/-cache-result/identifier.html
+$dokka.location:com.tom.caching/CacheResult/overwrote/#/PointingToDeclaration/root/com.tom.caching/-cache-result/overwrote.html
+$dokka.location:com.tom.caching/CachedDataSource///PointingToDeclaration/root/com.tom.caching/-cached-data-source/index.html
+$dokka.location:com.tom.caching/CachedDataSource/cache/#/PointingToDeclaration/root/com.tom.caching/-cached-data-source/cache.html
+$dokka.location:com.tom.caching/CachedDataSource/fetchFreshData/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-cached-data-source/fetch-fresh-data.html
+$dokka.location:com.tom.caching/CachedDataSource/getData/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-cached-data-source/get-data.html
+$dokka.location:com.tom.caching/CachedDataSource/onCacheRetrieve/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-cached-data-source/on-cache-retrieve.html
+$dokka.location:com.tom.caching/CachedDataSource/tryFromCache/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-cached-data-source/try-from-cache.html
+$dokka.location:com.tom.caching/DataSource///PointingToDeclaration/root/com.tom.caching/-data-source/index.html
+$dokka.location:com.tom.caching/DataSource/getData/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-data-source/get-data.html
+$dokka.location:com.tom.caching/DataSource/onDataFetched/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-data-source/on-data-fetched.html
+$dokka.location:com.tom.caching/FileCachedDataSource///PointingToDeclaration/root/com.tom.caching/-file-cached-data-source/index.html
+$dokka.location:com.tom.caching/FileCachedDataSource/FileCachedDataSource/#com.tom.caching.Cache[com.tom.caching.FileIdentifier,kotlin.String]/PointingToDeclaration/root/com.tom.caching/-file-cached-data-source/-file-cached-data-source.html
+$dokka.location:com.tom.caching/FileCachedDataSource/fetchSupplier/#com.tom.caching.FileIdentifier/PointingToDeclaration/root/com.tom.caching/-file-cached-data-source/fetch-supplier.html
+$dokka.location:com.tom.caching/FileCachedDataSource/onCacheRetrieve/#kotlin.String/PointingToDeclaration/root/com.tom.caching/-file-cached-data-source/on-cache-retrieve.html
+$dokka.location:com.tom.caching/FileCachedDataSource/onDataFetched/#kotlin.String/PointingToDeclaration/root/com.tom.caching/-file-cached-data-source/on-data-fetched.html
+$dokka.location:com.tom.caching/FileIdentifier///PointingToDeclaration/root/com.tom.caching/-file-identifier/index.html
+$dokka.location:com.tom.caching/FileIdentifier/id/#/PointingToDeclaration/root/com.tom.caching/-file-identifier/id.html
+$dokka.location:com.tom.caching/FileSystemCache.Companion///PointingToDeclaration/root/com.tom.caching/-file-system-cache/-companion/index.html
+$dokka.location:com.tom.caching/FileSystemCache///PointingToDeclaration/root/com.tom.caching/-file-system-cache/index.html
+$dokka.location:com.tom.caching/FileSystemCache/FileSystemCache/#com.tom.caching.CacheConfiguration[TypeParam(bounds=[com.tom.caching.FileIdentifier]),kotlin.String]#java.io.File/PointingToDeclaration/root/com.tom.caching/-file-system-cache/-file-system-cache.html
+$dokka.location:com.tom.caching/FileSystemCache/cacheItem/#TypeParam(bounds=[com.tom.caching.FileIdentifier])#kotlin.String/PointingToDeclaration/root/com.tom.caching/-file-system-cache/cache-item.html
+$dokka.location:com.tom.caching/FileSystemCache/clear/#/PointingToDeclaration/root/com.tom.caching/-file-system-cache/clear.html
+$dokka.location:com.tom.caching/FileSystemCache/configuration/#/PointingToDeclaration/root/com.tom.caching/-file-system-cache/configuration.html
+$dokka.location:com.tom.caching/FileSystemCache/getItem/#TypeParam(bounds=[com.tom.caching.FileIdentifier])/PointingToDeclaration/root/com.tom.caching/-file-system-cache/get-item.html
+$dokka.location:com.tom.caching/FileSystemCache/onItemRetrieval/#com.tom.caching.LoadSource#kotlin.String#kotlin.String?/PointingToDeclaration/root/com.tom.caching/-file-system-cache/on-item-retrieval.html
+$dokka.location:com.tom.caching/FileSystemCache/size/#/PointingToDeclaration/root/com.tom.caching/-file-system-cache/size.html
+$dokka.location:com.tom.caching/FileSystemCache/storageLocation/#/PointingToDeclaration/root/com.tom.caching/-file-system-cache/storage-location.html
+$dokka.location:com.tom.caching/LoadSource.CACHE///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}root/com.tom.caching/-load-source/-c-a-c-h-e/index.html
+$dokka.location:com.tom.caching/LoadSource.FRESH///PointingToDeclaration/{"org.jetbrains.dokka.links.EnumEntryDRIExtra":{"key":"org.jetbrains.dokka.links.EnumEntryDRIExtra"}}root/com.tom.caching/-load-source/-f-r-e-s-h/index.html
+$dokka.location:com.tom.caching/LoadSource///PointingToDeclaration/root/com.tom.caching/-load-source/index.html
+$dokka.location:com.tom.caching/LoadSource/valueOf/#kotlin.String/PointingToDeclaration/root/com.tom.caching/-load-source/value-of.html
+$dokka.location:com.tom.caching/LoadSource/values/#/PointingToDeclaration/root/com.tom.caching/-load-source/values.html
+$dokka.location:com.tom.caching/StringCachedDataSource///PointingToDeclaration/root/com.tom.caching/-string-cached-data-source/index.html
+$dokka.location:com.tom.caching/StringCachedDataSource/StringCachedDataSource/#com.tom.caching.Cache[TypeParam(bounds=[kotlin.Any?]),kotlin.String]/PointingToDeclaration/root/com.tom.caching/-string-cached-data-source/-string-cached-data-source.html
+$dokka.location:com.tom.caching/StringCachedDataSource/cache/#/PointingToDeclaration/root/com.tom.caching/-string-cached-data-source/cache.html
+$dokka.location:com.tom.caching/StringCachedDataSource/fetchFreshData/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-string-cached-data-source/fetch-fresh-data.html
+$dokka.location:com.tom.caching/StringCachedDataSource/fetchSupplier/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-string-cached-data-source/fetch-supplier.html
+$dokka.location:com.tom.caching/StringCachedDataSource/tryFromCache/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/root/com.tom.caching/-string-cached-data-source/try-from-cache.html
+com.tom.caching
+

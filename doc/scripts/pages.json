@@ -1,0 +1,542 @@
+[
+  {
+    "name": "CACHE",
+    "description": "com.tom.caching.LoadSource.CACHE",
+    "location": "root/com.tom.caching/-load-source/-c-a-c-h-e/index.html",
+    "searchKeys": [
+      "CACHE",
+      "CACHE",
+      "com.tom.caching.LoadSource.CACHE"
+    ]
+  },
+  {
+    "name": "FRESH",
+    "description": "com.tom.caching.LoadSource.FRESH",
+    "location": "root/com.tom.caching/-load-source/-f-r-e-s-h/index.html",
+    "searchKeys": [
+      "FRESH",
+      "FRESH",
+      "com.tom.caching.LoadSource.FRESH"
+    ]
+  },
+  {
+    "name": "abstract class StringCachedDataSource<ID>(val cache: Cache<ID, String>) : CachedDataSource<ID, String> ",
+    "description": "com.tom.caching.StringCachedDataSource",
+    "location": "root/com.tom.caching/-string-cached-data-source/index.html",
+    "searchKeys": [
+      "StringCachedDataSource",
+      "abstract class StringCachedDataSource<ID>(val cache: Cache<ID, String>) : CachedDataSource<ID, String> ",
+      "com.tom.caching.StringCachedDataSource"
+    ]
+  },
+  {
+    "name": "abstract fun cacheItem(identifier: ID, content: T): CacheResult<ID>",
+    "description": "com.tom.caching.Cache.cacheItem",
+    "location": "root/com.tom.caching/-cache/cache-item.html",
+    "searchKeys": [
+      "cacheItem",
+      "abstract fun cacheItem(identifier: ID, content: T): CacheResult<ID>",
+      "com.tom.caching.Cache.cacheItem"
+    ]
+  },
+  {
+    "name": "abstract fun clear()",
+    "description": "com.tom.caching.Cache.clear",
+    "location": "root/com.tom.caching/-cache/clear.html",
+    "searchKeys": [
+      "clear",
+      "abstract fun clear()",
+      "com.tom.caching.Cache.clear"
+    ]
+  },
+  {
+    "name": "abstract fun fetchFreshData(source: S): T?",
+    "description": "com.tom.caching.CachedDataSource.fetchFreshData",
+    "location": "root/com.tom.caching/-cached-data-source/fetch-fresh-data.html",
+    "searchKeys": [
+      "fetchFreshData",
+      "abstract fun fetchFreshData(source: S): T?",
+      "com.tom.caching.CachedDataSource.fetchFreshData"
+    ]
+  },
+  {
+    "name": "abstract fun fetchSupplier(identifier: ID): String",
+    "description": "com.tom.caching.StringCachedDataSource.fetchSupplier",
+    "location": "root/com.tom.caching/-string-cached-data-source/fetch-supplier.html",
+    "searchKeys": [
+      "fetchSupplier",
+      "abstract fun fetchSupplier(identifier: ID): String",
+      "com.tom.caching.StringCachedDataSource.fetchSupplier"
+    ]
+  },
+  {
+    "name": "abstract fun getData(source: S): T?",
+    "description": "com.tom.caching.DataSource.getData",
+    "location": "root/com.tom.caching/-data-source/get-data.html",
+    "searchKeys": [
+      "getData",
+      "abstract fun getData(source: S): T?",
+      "com.tom.caching.DataSource.getData"
+    ]
+  },
+  {
+    "name": "abstract fun getItem(identifier: ID): T?",
+    "description": "com.tom.caching.Cache.getItem",
+    "location": "root/com.tom.caching/-cache/get-item.html",
+    "searchKeys": [
+      "getItem",
+      "abstract fun getItem(identifier: ID): T?",
+      "com.tom.caching.Cache.getItem"
+    ]
+  },
+  {
+    "name": "abstract fun onCacheRetrieve(cachedValue: T)",
+    "description": "com.tom.caching.CachedDataSource.onCacheRetrieve",
+    "location": "root/com.tom.caching/-cached-data-source/on-cache-retrieve.html",
+    "searchKeys": [
+      "onCacheRetrieve",
+      "abstract fun onCacheRetrieve(cachedValue: T)",
+      "com.tom.caching.CachedDataSource.onCacheRetrieve"
+    ]
+  },
+  {
+    "name": "abstract fun onDataFetched(item: T)",
+    "description": "com.tom.caching.DataSource.onDataFetched",
+    "location": "root/com.tom.caching/-data-source/on-data-fetched.html",
+    "searchKeys": [
+      "onDataFetched",
+      "abstract fun onDataFetched(item: T)",
+      "com.tom.caching.DataSource.onDataFetched"
+    ]
+  },
+  {
+    "name": "abstract fun tryFromCache(source: S): T?",
+    "description": "com.tom.caching.CachedDataSource.tryFromCache",
+    "location": "root/com.tom.caching/-cached-data-source/try-from-cache.html",
+    "searchKeys": [
+      "tryFromCache",
+      "abstract fun tryFromCache(source: S): T?",
+      "com.tom.caching.CachedDataSource.tryFromCache"
+    ]
+  },
+  {
+    "name": "abstract val cache: Cache<S, T>",
+    "description": "com.tom.caching.CachedDataSource.cache",
+    "location": "root/com.tom.caching/-cached-data-source/cache.html",
+    "searchKeys": [
+      "cache",
+      "abstract val cache: Cache<S, T>",
+      "com.tom.caching.CachedDataSource.cache"
+    ]
+  },
+  {
+    "name": "abstract val configuration: CacheConfiguration<ID, T>",
+    "description": "com.tom.caching.Cache.configuration",
+    "location": "root/com.tom.caching/-cache/configuration.html",
+    "searchKeys": [
+      "configuration",
+      "abstract val configuration: CacheConfiguration<ID, T>",
+      "com.tom.caching.Cache.configuration"
+    ]
+  },
+  {
+    "name": "abstract val id: String",
+    "description": "com.tom.caching.FileIdentifier.id",
+    "location": "root/com.tom.caching/-file-identifier/id.html",
+    "searchKeys": [
+      "id",
+      "abstract val id: String",
+      "com.tom.caching.FileIdentifier.id"
+    ]
+  },
+  {
+    "name": "abstract val size: Int?",
+    "description": "com.tom.caching.Cache.size",
+    "location": "root/com.tom.caching/-cache/size.html",
+    "searchKeys": [
+      "size",
+      "abstract val size: Int?",
+      "com.tom.caching.Cache.size"
+    ]
+  },
+  {
+    "name": "class CacheError(cause: String) : Exception",
+    "description": "com.tom.caching.CacheError",
+    "location": "root/com.tom.caching/-cache-error/index.html",
+    "searchKeys": [
+      "CacheError",
+      "class CacheError(cause: String) : Exception",
+      "com.tom.caching.CacheError"
+    ]
+  },
+  {
+    "name": "class CacheException(cause: String) : Exception",
+    "description": "com.tom.caching.CacheException",
+    "location": "root/com.tom.caching/-cache-exception/index.html",
+    "searchKeys": [
+      "CacheException",
+      "class CacheException(cause: String) : Exception",
+      "com.tom.caching.CacheException"
+    ]
+  },
+  {
+    "name": "constructor(cache: Cache<FileIdentifier, String>)",
+    "description": "com.tom.caching.FileCachedDataSource.FileCachedDataSource",
+    "location": "root/com.tom.caching/-file-cached-data-source/-file-cached-data-source.html",
+    "searchKeys": [
+      "FileCachedDataSource",
+      "constructor(cache: Cache<FileIdentifier, String>)",
+      "com.tom.caching.FileCachedDataSource.FileCachedDataSource"
+    ]
+  },
+  {
+    "name": "constructor(cache: Cache<ID, String>)",
+    "description": "com.tom.caching.StringCachedDataSource.StringCachedDataSource",
+    "location": "root/com.tom.caching/-string-cached-data-source/-string-cached-data-source.html",
+    "searchKeys": [
+      "StringCachedDataSource",
+      "constructor(cache: Cache<ID, String>)",
+      "com.tom.caching.StringCachedDataSource.StringCachedDataSource"
+    ]
+  },
+  {
+    "name": "constructor(cause: String)",
+    "description": "com.tom.caching.CacheError.CacheError",
+    "location": "root/com.tom.caching/-cache-error/-cache-error.html",
+    "searchKeys": [
+      "CacheError",
+      "constructor(cause: String)",
+      "com.tom.caching.CacheError.CacheError"
+    ]
+  },
+  {
+    "name": "constructor(cause: String)",
+    "description": "com.tom.caching.CacheException.CacheException",
+    "location": "root/com.tom.caching/-cache-exception/-cache-exception.html",
+    "searchKeys": [
+      "CacheException",
+      "constructor(cause: String)",
+      "com.tom.caching.CacheException.CacheException"
+    ]
+  },
+  {
+    "name": "constructor(configuration: CacheConfiguration<ID, String> = CacheConfiguration(), cacheRoot: File = Paths.get(\".cache\").toFile())",
+    "description": "com.tom.caching.FileSystemCache.FileSystemCache",
+    "location": "root/com.tom.caching/-file-system-cache/-file-system-cache.html",
+    "searchKeys": [
+      "FileSystemCache",
+      "constructor(configuration: CacheConfiguration<ID, String> = CacheConfiguration(), cacheRoot: File = Paths.get(\".cache\").toFile())",
+      "com.tom.caching.FileSystemCache.FileSystemCache"
+    ]
+  },
+  {
+    "name": "constructor(identifier: ID, overwrote: Boolean)",
+    "description": "com.tom.caching.CacheResult.CacheResult",
+    "location": "root/com.tom.caching/-cache-result/-cache-result.html",
+    "searchKeys": [
+      "CacheResult",
+      "constructor(identifier: ID, overwrote: Boolean)",
+      "com.tom.caching.CacheResult.CacheResult"
+    ]
+  },
+  {
+    "name": "constructor(maxAge: <Error class: unknown class> = 1.days)",
+    "description": "com.tom.caching.CacheConfiguration.CacheConfiguration",
+    "location": "root/com.tom.caching/-cache-configuration/-cache-configuration.html",
+    "searchKeys": [
+      "CacheConfiguration",
+      "constructor(maxAge: <Error class: unknown class> = 1.days)",
+      "com.tom.caching.CacheConfiguration.CacheConfiguration"
+    ]
+  },
+  {
+    "name": "data class CacheConfiguration<ID, T>(val maxAge: <Error class: unknown class> = 1.days)",
+    "description": "com.tom.caching.CacheConfiguration",
+    "location": "root/com.tom.caching/-cache-configuration/index.html",
+    "searchKeys": [
+      "CacheConfiguration",
+      "data class CacheConfiguration<ID, T>(val maxAge: <Error class: unknown class> = 1.days)",
+      "com.tom.caching.CacheConfiguration"
+    ]
+  },
+  {
+    "name": "data class CacheResult<ID>(val identifier: ID, val overwrote: Boolean)",
+    "description": "com.tom.caching.CacheResult",
+    "location": "root/com.tom.caching/-cache-result/index.html",
+    "searchKeys": [
+      "CacheResult",
+      "data class CacheResult<ID>(val identifier: ID, val overwrote: Boolean)",
+      "com.tom.caching.CacheResult"
+    ]
+  },
+  {
+    "name": "enum LoadSource : Enum<LoadSource> ",
+    "description": "com.tom.caching.LoadSource",
+    "location": "root/com.tom.caching/-load-source/index.html",
+    "searchKeys": [
+      "LoadSource",
+      "enum LoadSource : Enum<LoadSource> ",
+      "com.tom.caching.LoadSource"
+    ]
+  },
+  {
+    "name": "fun valueOf(value: String): LoadSource",
+    "description": "com.tom.caching.LoadSource.valueOf",
+    "location": "root/com.tom.caching/-load-source/value-of.html",
+    "searchKeys": [
+      "valueOf",
+      "fun valueOf(value: String): LoadSource",
+      "com.tom.caching.LoadSource.valueOf"
+    ]
+  },
+  {
+    "name": "fun values(): Array<LoadSource>",
+    "description": "com.tom.caching.LoadSource.values",
+    "location": "root/com.tom.caching/-load-source/values.html",
+    "searchKeys": [
+      "values",
+      "fun values(): Array<LoadSource>",
+      "com.tom.caching.LoadSource.values"
+    ]
+  },
+  {
+    "name": "interface Cache<ID, T>",
+    "description": "com.tom.caching.Cache",
+    "location": "root/com.tom.caching/-cache/index.html",
+    "searchKeys": [
+      "Cache",
+      "interface Cache<ID, T>",
+      "com.tom.caching.Cache"
+    ]
+  },
+  {
+    "name": "interface CachedDataSource<S, T> : DataSource<S, T> ",
+    "description": "com.tom.caching.CachedDataSource",
+    "location": "root/com.tom.caching/-cached-data-source/index.html",
+    "searchKeys": [
+      "CachedDataSource",
+      "interface CachedDataSource<S, T> : DataSource<S, T> ",
+      "com.tom.caching.CachedDataSource"
+    ]
+  },
+  {
+    "name": "interface DataSource<S, T>",
+    "description": "com.tom.caching.DataSource",
+    "location": "root/com.tom.caching/-data-source/index.html",
+    "searchKeys": [
+      "DataSource",
+      "interface DataSource<S, T>",
+      "com.tom.caching.DataSource"
+    ]
+  },
+  {
+    "name": "interface FileIdentifier",
+    "description": "com.tom.caching.FileIdentifier",
+    "location": "root/com.tom.caching/-file-identifier/index.html",
+    "searchKeys": [
+      "FileIdentifier",
+      "interface FileIdentifier",
+      "com.tom.caching.FileIdentifier"
+    ]
+  },
+  {
+    "name": "object Companion",
+    "description": "com.tom.caching.FileSystemCache.Companion",
+    "location": "root/com.tom.caching/-file-system-cache/-companion/index.html",
+    "searchKeys": [
+      "Companion",
+      "object Companion",
+      "com.tom.caching.FileSystemCache.Companion"
+    ]
+  },
+  {
+    "name": "open class FileCachedDataSource(cache: Cache<FileIdentifier, String>) : StringCachedDataSource<FileIdentifier> ",
+    "description": "com.tom.caching.FileCachedDataSource",
+    "location": "root/com.tom.caching/-file-cached-data-source/index.html",
+    "searchKeys": [
+      "FileCachedDataSource",
+      "open class FileCachedDataSource(cache: Cache<FileIdentifier, String>) : StringCachedDataSource<FileIdentifier> ",
+      "com.tom.caching.FileCachedDataSource"
+    ]
+  },
+  {
+    "name": "open class FileSystemCache<ID : FileIdentifier>(val configuration: CacheConfiguration<ID, String> = CacheConfiguration(), cacheRoot: File = Paths.get(\".cache\").toFile()) : Cache<ID, String> ",
+    "description": "com.tom.caching.FileSystemCache",
+    "location": "root/com.tom.caching/-file-system-cache/index.html",
+    "searchKeys": [
+      "FileSystemCache",
+      "open class FileSystemCache<ID : FileIdentifier>(val configuration: CacheConfiguration<ID, String> = CacheConfiguration(), cacheRoot: File = Paths.get(\".cache\").toFile()) : Cache<ID, String> ",
+      "com.tom.caching.FileSystemCache"
+    ]
+  },
+  {
+    "name": "open fun onItemRetrieval(source: LoadSource, id: String, content: String?)",
+    "description": "com.tom.caching.FileSystemCache.onItemRetrieval",
+    "location": "root/com.tom.caching/-file-system-cache/on-item-retrieval.html",
+    "searchKeys": [
+      "onItemRetrieval",
+      "open fun onItemRetrieval(source: LoadSource, id: String, content: String?)",
+      "com.tom.caching.FileSystemCache.onItemRetrieval"
+    ]
+  },
+  {
+    "name": "open override fun fetchFreshData(source: ID): String",
+    "description": "com.tom.caching.StringCachedDataSource.fetchFreshData",
+    "location": "root/com.tom.caching/-string-cached-data-source/fetch-fresh-data.html",
+    "searchKeys": [
+      "fetchFreshData",
+      "open override fun fetchFreshData(source: ID): String",
+      "com.tom.caching.StringCachedDataSource.fetchFreshData"
+    ]
+  },
+  {
+    "name": "open override fun fetchSupplier(identifier: FileIdentifier): String",
+    "description": "com.tom.caching.FileCachedDataSource.fetchSupplier",
+    "location": "root/com.tom.caching/-file-cached-data-source/fetch-supplier.html",
+    "searchKeys": [
+      "fetchSupplier",
+      "open override fun fetchSupplier(identifier: FileIdentifier): String",
+      "com.tom.caching.FileCachedDataSource.fetchSupplier"
+    ]
+  },
+  {
+    "name": "open override fun getData(source: S): T?",
+    "description": "com.tom.caching.CachedDataSource.getData",
+    "location": "root/com.tom.caching/-cached-data-source/get-data.html",
+    "searchKeys": [
+      "getData",
+      "open override fun getData(source: S): T?",
+      "com.tom.caching.CachedDataSource.getData"
+    ]
+  },
+  {
+    "name": "open override fun onCacheRetrieve(cachedValue: String)",
+    "description": "com.tom.caching.FileCachedDataSource.onCacheRetrieve",
+    "location": "root/com.tom.caching/-file-cached-data-source/on-cache-retrieve.html",
+    "searchKeys": [
+      "onCacheRetrieve",
+      "open override fun onCacheRetrieve(cachedValue: String)",
+      "com.tom.caching.FileCachedDataSource.onCacheRetrieve"
+    ]
+  },
+  {
+    "name": "open override fun onDataFetched(item: String)",
+    "description": "com.tom.caching.FileCachedDataSource.onDataFetched",
+    "location": "root/com.tom.caching/-file-cached-data-source/on-data-fetched.html",
+    "searchKeys": [
+      "onDataFetched",
+      "open override fun onDataFetched(item: String)",
+      "com.tom.caching.FileCachedDataSource.onDataFetched"
+    ]
+  },
+  {
+    "name": "open override fun tryFromCache(source: ID): String?",
+    "description": "com.tom.caching.StringCachedDataSource.tryFromCache",
+    "location": "root/com.tom.caching/-string-cached-data-source/try-from-cache.html",
+    "searchKeys": [
+      "tryFromCache",
+      "open override fun tryFromCache(source: ID): String?",
+      "com.tom.caching.StringCachedDataSource.tryFromCache"
+    ]
+  },
+  {
+    "name": "open override val cache: Cache<ID, String>",
+    "description": "com.tom.caching.StringCachedDataSource.cache",
+    "location": "root/com.tom.caching/-string-cached-data-source/cache.html",
+    "searchKeys": [
+      "cache",
+      "open override val cache: Cache<ID, String>",
+      "com.tom.caching.StringCachedDataSource.cache"
+    ]
+  },
+  {
+    "name": "open override val configuration: CacheConfiguration<ID, String>",
+    "description": "com.tom.caching.FileSystemCache.configuration",
+    "location": "root/com.tom.caching/-file-system-cache/configuration.html",
+    "searchKeys": [
+      "configuration",
+      "open override val configuration: CacheConfiguration<ID, String>",
+      "com.tom.caching.FileSystemCache.configuration"
+    ]
+  },
+  {
+    "name": "open override val size: Int?",
+    "description": "com.tom.caching.FileSystemCache.size",
+    "location": "root/com.tom.caching/-file-system-cache/size.html",
+    "searchKeys": [
+      "size",
+      "open override val size: Int?",
+      "com.tom.caching.FileSystemCache.size"
+    ]
+  },
+  {
+    "name": "override fun cacheItem(filename: ID, content: String): CacheResult<ID>",
+    "description": "com.tom.caching.FileSystemCache.cacheItem",
+    "location": "root/com.tom.caching/-file-system-cache/cache-item.html",
+    "searchKeys": [
+      "cacheItem",
+      "override fun cacheItem(filename: ID, content: String): CacheResult<ID>",
+      "com.tom.caching.FileSystemCache.cacheItem"
+    ]
+  },
+  {
+    "name": "override fun clear()",
+    "description": "com.tom.caching.FileSystemCache.clear",
+    "location": "root/com.tom.caching/-file-system-cache/clear.html",
+    "searchKeys": [
+      "clear",
+      "override fun clear()",
+      "com.tom.caching.FileSystemCache.clear"
+    ]
+  },
+  {
+    "name": "override fun getItem(filename: ID): String?",
+    "description": "com.tom.caching.FileSystemCache.getItem",
+    "location": "root/com.tom.caching/-file-system-cache/get-item.html",
+    "searchKeys": [
+      "getItem",
+      "override fun getItem(filename: ID): String?",
+      "com.tom.caching.FileSystemCache.getItem"
+    ]
+  },
+  {
+    "name": "val identifier: ID",
+    "description": "com.tom.caching.CacheResult.identifier",
+    "location": "root/com.tom.caching/-cache-result/identifier.html",
+    "searchKeys": [
+      "identifier",
+      "val identifier: ID",
+      "com.tom.caching.CacheResult.identifier"
+    ]
+  },
+  {
+    "name": "val maxAge: <Error class: unknown class>",
+    "description": "com.tom.caching.CacheConfiguration.maxAge",
+    "location": "root/com.tom.caching/-cache-configuration/max-age.html",
+    "searchKeys": [
+      "maxAge",
+      "val maxAge: <Error class: unknown class>",
+      "com.tom.caching.CacheConfiguration.maxAge"
+    ]
+  },
+  {
+    "name": "val overwrote: Boolean",
+    "description": "com.tom.caching.CacheResult.overwrote",
+    "location": "root/com.tom.caching/-cache-result/overwrote.html",
+    "searchKeys": [
+      "overwrote",
+      "val overwrote: Boolean",
+      "com.tom.caching.CacheResult.overwrote"
+    ]
+  },
+  {
+    "name": "val storageLocation: String",
+    "description": "com.tom.caching.FileSystemCache.storageLocation",
+    "location": "root/com.tom.caching/-file-system-cache/storage-location.html",
+    "searchKeys": [
+      "storageLocation",
+      "val storageLocation: String",
+      "com.tom.caching.FileSystemCache.storageLocation"
+    ]
+  }
+]

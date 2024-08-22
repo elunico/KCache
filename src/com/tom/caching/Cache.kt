@@ -1,7 +1,5 @@
 package com.tom.caching
 
-import java.nio.file.Path
-import kotlin.jvm.Throws
 import kotlin.time.Duration
 import kotlin.time.Duration.Companion.days
 
@@ -66,6 +64,10 @@ interface Cache<ID, T> {
      * Retrieve the content associated with the given [identifier] or null if no such identifier was cached
      * If retrieval fails [CacheException] can be thrown but SHOULD NOT BE thrown for successful attempts at retreival
      * that do not yield extant cache values
+     *
+     * Note that it is the responsibility of the implementer to respect the [CacheConfiguration] choices of the user
+     * If, for example, [CacheConfiguration.maxAge] is less than the age of the cached item, it is up to the implementer
+     * to check and return null in that case. If necessary the implementer should also evict the item from the cache
      */
     @Throws(CacheException::class)
     fun getItem(identifier: ID): T?

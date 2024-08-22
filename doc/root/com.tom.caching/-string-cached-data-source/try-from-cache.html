@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1" name="viewport">
+    <title>tryFromCache</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+    <script async="async" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js"
+            type="text/javascript"></script>
+    <script async="async" src="../../../scripts/sourceset_dependencies.js" type="text/javascript"></script>
+    <link href="../../../styles/style.css" rel="Stylesheet">
+    <link href="../../../styles/main.css" rel="Stylesheet">
+    <link href="../../../styles/prism.css" rel="Stylesheet">
+    <link href="../../../styles/logo-styles.css" rel="Stylesheet">
+    <link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+    <script async="async" src="../../../scripts/clipboard.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/navigation-loader.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/platform-content-handler.js" type="text/javascript"></script>
+    <script defer="defer" src="../../../scripts/main.js" type="text/javascript"></script>
+    <script async="async" src="../../../scripts/prism.js" type="text/javascript"></script>
+    <script defer="defer" src="../../../scripts/symbol-parameters-wrapper_deferred.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="root">
+    <nav class="navigation" id="navigation-wrapper">
+        <div class="navigation--inner">
+            <div class="navigation-title">
+                <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+                <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                        root
+                    </a>
+                </div>
+                <div class="library-version">
+                </div>
+            </div>
+            <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="root/main">JVM
+                </button>
+            </div>
+        </div>
+        <div class="navigation-controls">
+            <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">
+                switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in
+                API
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div class="sidebar" id="leftColumn">
+            <div class="sidebar--inner" id="sideMenu"></div>
+        </div>
+        <div id="main">
+            <div class="main-content" data-page-type="member" id="content"
+                 pageIds="root::com.tom.caching/StringCachedDataSource/tryFromCache/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration//-1617659094">
+                <div class="breadcrumbs"><a href="../../../index.html">root</a><span class="delimiter">/</span><a
+                        href="../index.html">com.tom.caching</a><span class="delimiter">/</span><a href="index.html">StringCachedDataSource</a><span
+                        class="delimiter">/</span><span class="current">tryFromCache</span></div>
+                <div class="cover ">
+                    <h1 class="cover"><span>try</span>
+                        <wbr></wbr>
+                        <span>From</span>
+                        <wbr></wbr>
+                        <span><span>Cache</span></span></h1>
+                </div>
+                <div class="platform-hinted " data-platform-hinted="data-platform-hinted">
+                    <div class="content sourceset-dependent-content" data-active="" data-togglable="root/main">
+                        <div class="symbol monospace"><span class="token keyword">open </span><span
+                                class="token keyword">override </span><span class="token keyword">fun </span><a
+                                href="try-from-cache.html"><span class="token function">tryFromCache</span></a><span
+                                class="token punctuation">(</span><span class="parameters "><span class="parameter ">source<span
+                                class="token operator">: </span><a href="index.html">ID</a></span></span><span
+                                class="token punctuation">)</span><span class="token operator">: </span><a
+                                href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a><span
+                                class="token operator">?</span></div>
+                        <p class="paragraph">Retrieves the data from <a href="cache.html">cache</a> if <a
+                                href="cache.html">cache</a> is not null and if <a href="../-cache/get-item.html">Cache.getItem</a>
+                            returns non-null</p>
+                        <p class="paragraph">Implementers should implement this method and <a
+                                href="fetch-fresh-data.html">fetchFreshData</a>. Callers should use <span
+                                data-unresolved-link="com.tom.caching/StringCachedDataSource/getData/#TypeParam(bounds=[kotlin.Any?])/PointingToDeclaration/">getData</span>
+                        </p><h4 class="">Throws</h4>
+                        <div class="table">
+                            <div class="table-row" data-filterable-current="root/main" data-filterable-set="root/main">
+                                <div class="main-subrow keyValue ">
+                                    <div class=""><span class="inline-flex"><div><a
+                                            href="../-cache-exception/index.html"><span>Cache</span><wbr></wbr><span><span>Exception</span></span></a></div></span>
+                                    </div>
+                                    <div>
+                                        <div class="title"><p class="paragraph">if <a href="../-cache/get-item.html">Cache.getItem</a>
+                                            does</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <span class="go-to-top-icon"><a href="#content"
+                                                id="go-to-top-link"></a></span><span>© 2024 Copyright</span><span
+                    class="pull-right"><span>Generated by </span><a
+                    href="https://github.com/Kotlin/dokka"><span>dokka</span><span
+                    class="padded-icon"></span></a></span>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
