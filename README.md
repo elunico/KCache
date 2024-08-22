@@ -33,11 +33,9 @@ class MyOtherDataSource : StringCachedDataSource<String>(/**cache**/) {
 ```
 
 In addition to the main interfaces, `FileCachedDataSource<ID>` exists which retrieves files from the File system with
-caching. This is not an
-abstract class and needs to be created with any ID type conforming to `FileIdentifier` which takes returns a unique file
-identifier to use
-as the file name on disk for the cached items. This class is meant to work with `FileSystemCache` as its cache to
-simplify implementation
+caching. This is not an abstract class and needs to be created with any ID type conforming to `FileIdentifier` which
+takes returns a unique file identifier to use as the file name on disk for the cached items. This class is meant to
+work with `FileSystemCache` as its cache to simplify implementation
 
 ### Example Use
 
@@ -47,14 +45,8 @@ data class MixedData(val type: String, val url: String) : FileIdentifier {
         get() = "$type-$url"
 }
 
-class MyFilesystemCache : FileSystemCache<MixedData> {
-    override fun onItemRetrieval(source: LoadSource, id: String, content: String?) {
-        println("Item $id retrieved from $source")
-    }
-}
-
 fun main() {
-    val source = FileCachedDataSource(MyFilesystemCache())
+    val source = FileCachedDataSource(FileSystemCache())
     source.getData(source)
 }
 
