@@ -17,8 +17,8 @@ import kotlin.time.DurationUnit
  *    build them and must be unique
  * 3. Have permission to write in the directory named by [cacheStore]
  */
-abstract class FileSystemCache<ID>(
-    override val configuration: CacheConfiguration<ID, String>,
+open class FileSystemCache<ID>(
+    override val configuration: CacheConfiguration<ID, String> = CacheConfiguration(),
     cacheRoot: File = Paths.get(".cache").toFile()
 ) : Cache<ID, String> where ID : FileIdentifier {
 
@@ -54,26 +54,27 @@ abstract class FileSystemCache<ID>(
     /**
      * Protects filesystem from illegal characters
      */
-    private fun String.escapedForFilesystemPath(): String {
+    protected fun String.escapedForFilesystemPath(): String {
         return URLEncoder.encode(this, "utf-8").replace("%", "+")
     }
 
     /**
      * Determines the filepath for a given filename identifier String.
      */
-    private fun fileFromName(identifier: ID): File {
+    protected fun fileFromName(identifier: ID): File {
         return Paths.get(cacheStoreDirectory.absolutePath, identifier.id.escapedForFilesystemPath())
             .toAbsolutePath().toFile()
     }
 
-    abstract fun onItemRetrieval(source: LoadSource, id: String, content: String?)
+    // can be overridden but does not require implementation
+    open fun onItemRetrieval(source: LoadSource, id: String, content: String?) {}
     // abstract fun identify(content: T): ID // inherited from Cache
 
     /**
      * Caches the file [content] using [filename] as an identifier
      * @see [Cache.cacheItem]
      */
-    override fun cacheItem(filename: ID, content: String): CacheResult<ID> {
+    final override fun cacheItem(filename: ID, content: String): CacheResult<ID> {
         val file = fileFromName(filename)
         val result = CacheResult(filename, file.exists())
         file.writeText(content)
@@ -84,7 +85,7 @@ abstract class FileSystemCache<ID>(
      * Attempts to retrieve the content associated with [filename] id in the cache
      * @see [Cache.getItem]
      */
-    override fun getItem(filename: ID): String? {
+    final override fun getItem(filename: ID): String? {
         return try {
             val file = fileFromName(filename)
             if (!file.exists()) {
@@ -109,7 +110,7 @@ abstract class FileSystemCache<ID>(
     override val size: Int?
         get() = null
 
-    override fun clear() {
+    final override fun clear() {
         for (item in cacheStoreDirectory.listFiles() ?: throw CacheException("Could not list directory to clear")) {
             item.deleteRecursively()
         }

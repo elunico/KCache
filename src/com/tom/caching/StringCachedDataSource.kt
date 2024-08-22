@@ -9,10 +9,10 @@ package com.tom.caching
  */
 abstract class StringCachedDataSource<ID>(override val cache: Cache<ID, String>) :
     CachedDataSource<ID, String> {
-    override fun tryFromCache(source: ID, onRetrieve: (item: String) -> Unit): String? {
+    override fun tryFromCache(source: ID): String? {
         val cachedItem = cache.getItem(source)
         if (cachedItem != null) {
-            onRetrieve(cachedItem)
+            onCacheRetrieve(cachedItem)
             return cachedItem
         }
         return null
@@ -25,10 +25,10 @@ abstract class StringCachedDataSource<ID>(override val cache: Cache<ID, String>)
      */
     abstract fun fetchSupplier(identifier: ID): String
 
-    override fun fetchFreshData(source: ID, onRetrieve: (item: String) -> Unit): String {
+    override fun fetchFreshData(source: ID): String {
         val data = fetchSupplier(source)
         cache.cacheItem(source, data)
-        onRetrieve(data)
+        onDataFetched(data)
         return data
     }
 }

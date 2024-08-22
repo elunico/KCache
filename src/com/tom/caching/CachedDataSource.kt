@@ -26,14 +26,19 @@ interface CachedDataSource<S, T> : DataSource<S, T> {
      * @throws CacheException if [Cache.getItem] does
      */
     @Throws(CacheException::class)
-    fun tryFromCache(source: S, onRetrieve: (item: T) -> Unit): T?
+    fun tryFromCache(source: S): T?
 
     /**
      * Retrieves the data from their original source, returning null if it fails to retrieve the data
      *
      * Implementers should implement this method and [tryFromCache]. Callers should use [getData]
      */
-    fun fetchFreshData(source: S, onRetrieve: (item: T) -> Unit): T?
+    fun fetchFreshData(source: S): T?
+
+    /**
+     * Called if the cache returns a cached value with that retrieved value
+     */
+    fun onCacheRetrieve(cachedValue: T)
 
     /**
      * Callers should use this method to retrieve data from the DataSource. It automatically handlers first
@@ -43,14 +48,18 @@ interface CachedDataSource<S, T> : DataSource<S, T> {
      * @throws CacheException if [tryFromCache] does
      */
     @Throws(CacheException::class)
-    override fun getData(source: S, onRetrieve: (source: LoadSource, item: T) -> Unit): T? {
-        val cachedValue = tryFromCache(source) { onRetrieve(LoadSource.CACHE, it) }
-        if (cachedValue != null)
+    override fun getData(source: S): T? {
+        val cachedValue = tryFromCache(source)
+        if (cachedValue != null) {
+            onCacheRetrieve(cachedValue)
             return cachedValue
+        }
 
-        val freshData = fetchFreshData(source) { onRetrieve(LoadSource.FRESH, it) }
-        if (freshData != null)
+        val freshData = fetchFreshData(source)
+        if (freshData != null) {
+            onDataFetched(freshData)
             cache.cacheItem(source, freshData)
+        }
 
         return freshData
     }

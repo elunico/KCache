@@ -1,7 +1,5 @@
 package com.tom.caching
 
-import kotlin.jvm.Throws
-
 /**
  * Represents a source of data
  *
@@ -12,6 +10,13 @@ import kotlin.jvm.Throws
  * @see [CachedDataSource]
  */
 interface DataSource<S, T> {
-    @Throws(Exception::class)
-    fun getData(source: S, onRetrieve: (source: LoadSource, item: T) -> Unit): T?
+    /**
+     * Gets data from a generic source of Data
+     */
+    fun getData(source: S): T?
+
+    /**
+     * Called if the data is successfully retrieved from [getData]
+     */
+    fun onDataFetched(item: T)
 }
