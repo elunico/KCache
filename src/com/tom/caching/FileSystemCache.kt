@@ -22,25 +22,13 @@ open class FileSystemCache<ID>(
     cacheRoot: File = Paths.get(".cache").toFile()
 ) : Cache<ID, String> where ID : FileIdentifier {
 
-    companion object {
-        @JvmStatic
-        private var currentInstanceNumber: Int = 1
-            get() {
-                synchronized(FileSystemCache::class.java) {
-                    field++
-                    return field
-                }
-            }
-    }
-
-    private val cacheInstanceID: String = "FileSystemCache-Impl$currentInstanceNumber"
 
     /**
      * Returns the storage location of the cache in an immutable way
      */
     val storageLocation get() = cacheStoreDirectory.absolutePath
 
-    private val cacheStoreDirectory: File = Paths.get(cacheRoot.absolutePath, cacheInstanceID).toFile()
+    private val cacheStoreDirectory: File = Paths.get(cacheRoot.absolutePath).toFile()
 
     init {
         if (!cacheStoreDirectory.exists()) {
@@ -116,4 +104,3 @@ open class FileSystemCache<ID>(
         }
     }
 }
-
